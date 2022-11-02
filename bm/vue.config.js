@@ -1,3 +1,9 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+
+
+  devServer : {
+    port : 1025
+  }
+
 }
