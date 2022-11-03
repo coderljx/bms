@@ -1,6 +1,5 @@
 <template>
   <div class="login">
-<!--    <img src="@/assets/bg.png" style="width: 100%;height: 100%;">-->
     <div class="contant">
       <div>
         <span style="font-size: 40px;color: #FFFFFF;font-family: SourceHanSansCN-Medium;">仓库账单结算系统</span>
@@ -10,6 +9,12 @@
 <!--      登陆框-->
       <div class="loginContant">
         <div>
+          <div style="width:204px;height : 72px;margin: 0 auto"><img src="@/assets/kerryimslogo2.png"></div>
+          <div style="margin-top: 20%">
+            <div class="login-user">
+
+            </div>
+          </div>
 
         </div>
       </div>
@@ -31,7 +36,8 @@ import {
   reactive,
   toRefs
 } from 'vue';
-
+const user = ref("");
+const psd = ref("");
 
 </script>
 
@@ -46,16 +52,18 @@ import {
 }
 .contant {
   width: 80%;
-  height: 340px;
+  height: 400px;
   display: flex;
   flex-direction: row;
 }
 .contant > :nth-child(1) {
-  width: 50%;
-  padding: 80px 80px 0 0;
+  flex: 1;
+  padding: 80px 180px 0 0;
+  box-sizing: border-box;
 }
 .contant > :nth-child(2) {
-  flex: 1;
+  width: 400px;
+  height: 400px;
   background: #FFFFFF;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -65,6 +73,9 @@ import {
 .loginContant > div {
   width: 70%;
   height: 80%;
-  border: 1px solid red;
 }
+.login-user {
+  height: 100px;
+}
+
 </style>

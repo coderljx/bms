@@ -3,11 +3,15 @@ import {createRouter, createWebHashHistory, createWebHistory, RouteRecordRaw} fr
 const routes: Array<RouteRecordRaw> = [
   {
     path : "/",
-    redirect : "login"
+    redirect : "index"
   },
   {
     path : "/login",
-    component : import("../components/login/login.vue")
+    component : () => import("../components/login/login.vue")
+  },
+  {
+    path : "/index",
+    component : () => import("../components/index/index.vue")
   },
 ];
 
@@ -15,5 +19,8 @@ const router = createRouter({
   history: createWebHistory(),
   routes
 });
+
+
+
 
 export default router;
