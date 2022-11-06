@@ -165,7 +165,7 @@ let objs : object = {
   // "5-2": ["供应商管理","Supplier"],
   //
   // "6-1": ["用户管理",""],
-  // "6-2": ["岗位管理",""]
+  "6-2": ["岗位管理",""]
 };
 const select = (index : string, path: string[], item: string) => {
   console.log(item)
