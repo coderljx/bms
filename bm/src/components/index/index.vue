@@ -169,7 +169,7 @@ let objs : object = {
 };
 const select = (index : string, path: string[], item: string) => {
   console.log(item)
-  const TabeleName: string[] =  objs[index];
+  const TabeleName: string[] = objs[index];
   if ( (TabeleName[0] != null) && TabeleName[0].trim().length > 0)
   {
     home.AddTab(TabeleName[0], TabeleName[1], router);
