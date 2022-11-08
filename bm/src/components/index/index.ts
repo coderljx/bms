@@ -16,6 +16,7 @@ export class Home  {
 
   };
 
+  // 新增一个选择tab
   AddTab = (TableName: string, routerName: string, router: Router) : void => {
     let objs = this.obj.value.editableTabs;
     let index: number = 0;
@@ -33,6 +34,7 @@ export class Home  {
     router.push(`/index/${routerName}`);
   };
 
+  // 移除tab
   RemoveTab = (Name: string) : void => {
     let objs = this.obj.value.editableTabs;
     let Index: number = -1;
