@@ -1,0 +1,86 @@
+.charges {
+    width: 100%;
+    height: auto;
+    background: #F4F4F4;
+}
+.charges-search {
+    width: 95%;
+    height: 60px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.charges-search > .items-center
+{
+    /* 正文normal */
+    font-family: SourceHanSansCN-Normal !important;
+    font-size: 13px;
+    font-weight: 350;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #4E4A4A;
+}
+.el-button > span {
+    /* 正文normal */
+    font-family: SourceHanSansCN-Normal;
+    font-size: 13px;
+    font-weight: 350;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.charges-tables {
+    width: 95%;
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 15px auto 0;
+}
+.charges-tables > .charges-tables-body {
+    width: 95%;
+    margin: 20px auto 0;
+}
+    /*表头的功能按钮样式*/
+.tables-function {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.tables-function > i {
+    width: 12px;
+}
+/*表头的文本样式*/
+.tables-text {
+    font-family: SourceHanSansCN-Normal;
+    font-size: 13px;
+    font-weight: 350;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-left: 3px;
+    /* 深灰色文本 */
+    color: #4E4A4A;
+}
+/*新增收费项 弹框样式 ---- start */
+.el-dialog > .el-dialog__header {
+    border-radius: 8px 8px 0px 0px;
+    opacity: 1;
+    background: #F4F5F6;
+}
+.el-dialog > .el-dialog__header > span {
+    /* 正文normal */
+    font-family: SourceHanSansCN-Normal;
+    font-size: 13px;
+    font-weight: 350;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #4E4A4A;
+}
+
+
+
+/*新增收费项 弹框样式 ---- end */

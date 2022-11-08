@@ -156,16 +156,16 @@ const obj = home.obj;
 let router : Router = getCurrentInstance().proxy.$router;
 let objs : object = {
   "1-1": ["收费项管理", "charges"],
-  // "1-2": ["用户管理", "Gh"],
+  "1-2": ["用户管理", "userManager"],
   // "1-3": ["药品管理", "drug"],
-  // "1-4": ["住院管理","inH"],
-  // "1-5": ["住院管理","inH"],
+  "1-4": ["仓库/客户管理","storeManager"],
+  "1-5": ["字段设置","field"],
   //
   // "5-1": ["药品采购","PR"],
   // "5-2": ["供应商管理","Supplier"],
   //
   // "6-1": ["用户管理",""],
-  "6-2": ["岗位管理",""]
+  // "6-2": ["岗位管理",""]
 };
 const select = (index : string, path: string[], item: string) => {
   console.log(item)

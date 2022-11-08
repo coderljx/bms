@@ -16,6 +16,18 @@ const routes: Array<RouteRecordRaw> = [
       {
         path : "charges",
         component : () => import("../components/index/charges/charges.vue")
+      },
+      {
+        path : "userManager",
+        component : () => import("../components/index/userManager/userManager.vue")
+      },
+      {
+        path : "storeManager",
+        component : () => import("../components/index/storeManager/storeManager.vue")
+      },
+      {
+        path : "field",
+        component : () => import("../components/index/field/field.vue")
       }
     ]
   },
