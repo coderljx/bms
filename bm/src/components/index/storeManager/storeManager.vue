@@ -19,8 +19,8 @@
         />
       </el-select>
 
-      <el-button style="margin-left: 20px;width: 72px;height: 28px;background: #ED6D00;">查询</el-button>
-      <el-button style="margin-left: 20px;width: 72px;height: 28px;background: #4E4A4A;">重置</el-button>
+      <el-button class="public-search-button">查询</el-button>
+      <el-button class="public-reset-button">重置</el-button>
     </div>
     <div class="public-body">
       <tableHeader>

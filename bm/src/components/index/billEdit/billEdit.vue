@@ -26,24 +26,23 @@
     <div class="public-body">
       <tableHeader>
         <template v-slot:title>
-          <p class="tables-text">字段列表</p>
+          <p class="tables-text">账单列表</p>
         </template>
       </tableHeader>
       <div class="public-body-content">
         <el-table :data="tableData" style="width: 100%" height="auto" border="true"
         >
           <el-table-column fixed type="selection" width="55" />
-          <el-table-column prop="date" label="字段" width="100" />
-          <el-table-column prop="name" label="描述" width="150" />
-          <el-table-column prop="name" label="数据类型" width="100" />
-          <el-table-column prop="name" label="字段名称" width="100" />
-          <el-table-column >
-            <template #default="scope">
-              <el-button size="small" @click="handleEdit(scope.$index, scope.row)"
-              >Edit</el-button
-              >
-            </template>
-          </el-table-column>
+          <el-table-column prop="date" label="账单编号" width="100" />
+          <el-table-column prop="name" label="操作日期" width="150" />
+          <el-table-column prop="name" label="费用类别" width="100" />
+          <el-table-column prop="name" label="收费项" width="100" />
+          <el-table-column prop="name" label="仓库" width="100" />
+          <el-table-column prop="name" label="客户名称" width="130" />
+          <el-table-column prop="name" label="原金额" width="100" />
+          <el-table-column prop="name" label="新金额" width="100" />
+          <el-table-column prop="name" label="操作人" width="100" />
+          <el-table-column prop="name" label="操作备注" width="100" />
         </el-table>
         <el-pagination
             v-model:currentPage="currentPage4"
@@ -62,6 +61,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script lang="ts" setup>
@@ -79,8 +79,9 @@ import {
 } from 'vue';
 import tableHeader from "@/public/tables-hearder"
 
+
 </script>
 
 <style>
-@import "field.css";
+
 </style>

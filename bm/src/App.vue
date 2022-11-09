@@ -8,6 +8,11 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media screen and (max-width: 1200px){
+  body {
+    width: 1200px;
+  }
+}
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px !important;
   background: #272424 !important;
@@ -67,10 +72,47 @@ ul > .el-menu-item {
   width: 95%;
   margin: 15px auto 0;
   background: #FFFFFF;
+  border-radius: 6px;
 }
 .public > .public-body > .public-body-content {
   width: 95%;
   margin: 10px auto 0;
+}
+.public-search-button {
+  margin-left: 20px !important;
+  width: 72px !important;
+  height: 28px !important;
+  background: #ED6D00 !important;
+}
+.public-reset-button {
+  margin-left: 20px !important;
+  width: 72px !important;
+  height: 28px !important;
+  background: #4E4A4A !important;
+}
+/*表头的功能按钮样式*/
+.tables-function {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.tables-function > i {
+  width: 12px;
+}
+/*表头的文本样式*/
+.tables-text {
+  font-family: SourceHanSansCN-Normal;
+  font-size: 13px;
+  font-weight: 350;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin-left: 3px;
+  /* 深灰色文本 */
+  color: #4E4A4A;
+}
+.tables-function:hover {
+  cursor: default;
 }
 /*公共样式 --- end */
 

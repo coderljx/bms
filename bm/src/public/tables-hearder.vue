@@ -37,7 +37,7 @@ import {
   box-sizing: border-box;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  border: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
 }
 .tables-header > .tables-header-left {
   float: left;

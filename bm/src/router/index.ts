@@ -28,6 +28,18 @@ const routes: Array<RouteRecordRaw> = [
       {
         path : "field",
         component : () => import("../components/index/field/field.vue")
+      },
+      {
+        path : "feeManager",
+        component : () => import("../components/index/feeManager/feeManager.vue")
+      },
+      {
+        path : "customerBill",
+        component : () => import("../components/index/customerBill/customerBill.vue")
+      },
+      {
+        path : "billEdit",
+        component : () => import("../components/index/billEdit/billEdit.vue")
       }
     ]
   },

@@ -18,7 +18,8 @@
     justify-content: center;
 }
 .content > .right {
-    width: calc(100% - 200px);
+    /*width: calc(100% - 200px);*/
+    flex: 1;
 }
 .content > .right > .hearder {
     width: 100%;
