@@ -131,10 +131,11 @@
             type="card"
             editable
             class="demo-tabs"
+            v-model="obj.currentTabName"
             @tab-click="home.Showclick"
             @tab-remove="home.RemoveTab">
           <el-tab-pane
-              v-for="item in obj"
+              v-for="item in obj.editableTabs"
               :key="item.name"
               :label="item.title"
               :name="item.name">
@@ -164,7 +165,9 @@ import {Home} from "./index";
 
 let home : Home = new Home();
 const isCollapse = ref(false);
-const obj = home.obj.value.editableTabs;
+const obj = home.obj.value;
+
+
 
 
 // const handleOpen = (key: string, keyPath: string[]) => {
